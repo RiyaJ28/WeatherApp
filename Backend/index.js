@@ -17,7 +17,7 @@ app.get("/city", function (req, res) {
   if (d == {}) {
     res.send("Working");
   } else {
-    const quer = d.city;
+    const quer = d.city || "Jaipur";
     const apiKey = "47a1aa13ada211c2bf4ee4dfee557b36";
     const unit = "metric";
     const url =
