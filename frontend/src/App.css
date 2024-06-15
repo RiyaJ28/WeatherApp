@@ -1,0 +1,45 @@
+html{
+    height:100%;
+    
+}
+body{
+    min-height: 100vh;
+    height: 100%;
+    overflow: hidden;
+    /*background-repeat: no-repeat;*/
+    background-image: linear-gradient( 109.6deg,  rgba(254,253,205,1) 11.2%, rgba(163,230,255,1) 91.1% );/*
+    background-image:radial-gradient( circle farthest-corner at 10% 20%,  rgba(109,112,204,1) 0%, rgba(63,166,196,1) 90% );*/
+}
+.name{
+    color:black;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.button:hover{
+    background-color: white;
+    color:black;
+}
+.button{
+    background-color: black;
+    color:white;
+}
+.svg-img{
+    position: absolute;
+    z-index: -1;
+    right:100px;
+}
+.report{
+    background-color: black;
+    color: aliceblue;
+    padding: 10px;
+    border-radius:25px ;
+    width: 400px;
+    margin-top: 20px;
+}
