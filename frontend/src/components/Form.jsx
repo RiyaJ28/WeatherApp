@@ -8,6 +8,7 @@ function Form(){
     const [city , setCity] = useState("");
     const [condition , setCondition] = useState("False")
     let d ={};
+    const url = "http://localhost:5000/city" || "https://weatherapp-backend-a5ry.onrender.com/city";
     const [weatherData , setWeatherData] = useState({
         city:"",
         temp:"",
@@ -21,7 +22,7 @@ function Form(){
         e.preventDefault();
         //console.log(city);
         try{
-            const response = await axios.get("http://localhost:5000/city" , { params: { city } } );
+            const response = await axios.get( url , { params: { city } } );
             //console.log(response.data);
             
             d = response.data;
