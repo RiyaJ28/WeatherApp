@@ -13,7 +13,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/city", function (req, res) {
   const d = req.query;
-  const quer = d.city;
+  if( d ){
+    const quer = d.city;
   const apiKey = "47a1aa13ada211c2bf4ee4dfee557b36";
   const unit = "metric";
   const url =
@@ -49,6 +50,11 @@ app.get("/city", function (req, res) {
       }
     });
   });
+  }
+  else{
+    res.send("Working");
+  }
+  
 });
 
 
