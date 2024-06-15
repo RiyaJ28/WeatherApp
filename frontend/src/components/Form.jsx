@@ -8,7 +8,7 @@ function Form(){
     const [city , setCity] = useState("");
     const [condition , setCondition] = useState("False")
     let d ={};
-    const url = "http://localhost:5000/city" || "https://weatherapp-backend-a5ry.onrender.com/city";
+    const url ="https://weatherapp-backend-a5ry.onrender.com/city";
     const [weatherData , setWeatherData] = useState({
         city:"",
         temp:"",
